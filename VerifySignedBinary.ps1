@@ -1,1 +1,3 @@
-Get-AuthenticodeSignature -FilePath Crest.exe | Format-List -Property *
+$outputBinaryLocation = "output/Executable.exe"
+
+Get-AuthenticodeSignature -FilePath $outputBinaryLocation | Format-List -Property *
